@@ -1,18 +1,3 @@
-# Taller de API Rest con Flask y VueJS en armonia
-
-![Flask y Vuejs](flaskyvuejs.jpg)
-
-## Necesitaremos
-
-- Portátil, y tuyo.
-- Python 3.5> 
-- Internet superior a 56k
-- Editor de texto enriquecido y con fundamento.
-- [httpie](https://httpie.org/)
-- [pipenv](https://docs.pipenv.org/)
-
-## ¿Bibliotecas?
-
 ### Microframework Web
 
 - **Flask**
