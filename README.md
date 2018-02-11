@@ -24,8 +24,17 @@
 
 ```bash
 pipenv install flask Flask-SQLAlchemy Flask-Migrate Flask-script Faker 
+pipenv run python3 models.py db init
+pipenv run python3 models.py db migrate
+pipenv run python3 models.py db upgrade
+pipenv run python3 fake_data.py
 ```
 
+### Ejecución
+
+```bash
+pipenv run python3 app.py
+```
 
 ## Peticiones
 
