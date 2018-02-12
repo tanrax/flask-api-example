@@ -17,8 +17,7 @@ from flask_marshmallow import Marshmallow
 dotenv_path = join(dirname(__file__), 'env')
 load_dotenv(dotenv_path)
 app = Flask(__name__)
-ma = Marshmallow(app)
-api = Api(app)
+
 
 # =========================
 # Configurations
@@ -26,6 +25,9 @@ api = Api(app)
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URI')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+ma = Marshmallow(app)
+api = Api(app)
 db.init_app(app)
 PRE_URL = '/api/v1/'
 
